@@ -4,7 +4,10 @@
     "bumpp",
     "changelogithub",
     "commitlint",
-    "preid"
+    "preid",
+    "rolldown",
+    "rspack",
+    "unplugin"
   ],
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,

@@ -1,19 +1,26 @@
 {
-  "name": "typescript-starter",
+  "name": "unplugin-external",
   "type": "module",
   "version": "0.0.0",
   "private": false,
   "description": "A typescript project startup template",
   "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
   "license": "MIT",
-  "homepage": "https://github.com/litingyes/typescript-starter#readme",
+  "homepage": "https://github.com/litingyes/unplugin-external#readme",
   "bugs": {
-    "url": "https://github.com/litingyes/typescript-starter/issues"
+    "url": "https://github.com/litingyes/unplugin-external/issues"
   },
   "keywords": [
-    "typescript",
-    "template",
-    "starter"
+    "unplugin",
+    "plugin",
+    "external",
+    "vite",
+    "rollup",
+    "webpack",
+    "esbuild",
+    "rspack",
+    "farm",
+    "rolldown"
   ],
   "exports": {
     ".": {
