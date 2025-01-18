@@ -6,5 +6,4 @@ export default defineConfig({
   push: true,
   all: true,
   confirm: true,
-  execute: 'pnpm build',
 })
