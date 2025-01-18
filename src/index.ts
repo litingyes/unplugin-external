@@ -8,8 +8,8 @@ import { getPkgInfo } from './utils'
 export const DEFAULT_OPTIONS: Options = {
   nodeBuiltins: true,
   cwd: cwd(),
-  deps: false,
-  devDeps: true,
+  deps: true,
+  devDeps: false,
   peerDeps: true,
 }
 

@@ -16,14 +16,14 @@ export interface Options {
   /**
    * exclude dependencies
    *
-   * default: false
+   * default: true
    */
   deps?: boolean
 
   /**
    * exclude devDependencies
    *
-   * default: true
+   * default: false
    */
   devDeps?: boolean
 
