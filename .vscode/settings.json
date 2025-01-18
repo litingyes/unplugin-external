@@ -4,6 +4,7 @@
     "bumpp",
     "changelogithub",
     "commitlint",
+    "mkdist",
     "preid",
     "rolldown",
     "rspack",

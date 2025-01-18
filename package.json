@@ -24,17 +24,48 @@
   ],
   "exports": {
     ".": {
-      "types": {
-        "import": "./dist/index.d.mts",
-        "require": "./dist/index.d.cts"
-      },
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs"
+    },
+    "./esbuild": {
+      "types": "./dist/esm/esbuild.d.ts",
+      "import": "./dist/esm/esbuild.js",
+      "require": "./dist/cjs/esbuild.cjs"
+    },
+    "./farm": {
+      "types": "./dist/esm/farm.d.ts",
+      "import": "./dist/esm/farm.js",
+      "require": "./dist/cjs/farm.cjs"
+    },
+    "./rollup": {
+      "types": "./dist/esm/rollup.d.ts",
+      "import": "./dist/esm/rollup.js",
+      "require": "./dist/cjs/rollup.cjs"
+    },
+    "./rspack": {
+      "types": "./dist/esm/rspack.d.ts",
+      "import": "./dist/esm/rspack.js",
+      "require": "./dist/cjs/rspack.cjs"
+    },
+    "./vite": {
+      "types": "./dist/esm/vite.d.ts",
+      "import": "./dist/esm/vite.js",
+      "require": "./dist/cjs/vite.cjs"
+    },
+    "./webpack": {
+      "types": "./dist/esm/webpack.d.ts",
+      "import": "./dist/esm/webpack.js",
+      "require": "./dist/cjs/webpack.cjs"
+    },
+    "./types": {
+      "types": "./dist/esm/types.d.ts"
+    },
+    "./*": "./*"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
@@ -46,6 +77,11 @@
     "commit": "git-cz",
     "release": "bumpp && npm publish",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "pkg-types": "^1.3.1",
+    "unplugin": "^2.1.2",
+    "usexx": "0.1.0-beta.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.14.0",
